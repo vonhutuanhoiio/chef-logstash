@@ -8,6 +8,11 @@
 #
 
 # Create directory for logstash
+directory "/etc/logstash" do
+  action :create
+  mode '0755'
+end
+
 directory "/etc/logstash/conf.d" do
   action :create
   mode '0755'
